@@ -5,7 +5,7 @@
 	<title>Bands</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-journal.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script type="text/javascript" src="main.js"></script>
+	
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
@@ -25,15 +25,11 @@
 				<h3>Your Answer:</h3>
 			</div>
 
-			<!-- <div class="show-me-button">
-				<button class="btn btn-primary">Show me the results!</button>
-			</div> -->
+			
 
 			<div class="content-body">
-				<h3>
-					<script type="text/javascript"> type="text/javascript">
-						document.write(userFavorite);
-					</script>
+				<h3 id="your-answer">
+					
 				</h3>
 			</div>
 
@@ -42,16 +38,18 @@
 			</div>
 
 			<div class="content-body">
-				<div id="dynamic-band-list">
-					???
+				<div class="show-me-button">
+					<button class="btn btn-info" id="show-bands-button">Show me all your favorites!</button>
+				</div>
+				<div id="band-list">
+					
 				</div>
 			</div>
 
 		</div> <!-- end content-section -->
 	</div> <!-- end container -->
 
-<script type="text/javascript">
-</script>
+<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>

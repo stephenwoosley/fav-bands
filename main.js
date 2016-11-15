@@ -1,9 +1,10 @@
 var bands = ["Mutemath", "Chvrches", "Sylvian Esso", "My Morning Jacket", "Vampire Weekend", "The Beatles", "Death Cab for Cutie"];
 
-var bandList = document.getElementById('dynamic-band-list');
+var bandList = document.getElementById('band-list');
+
+var yourAnswer = document.getElementById('your-answer')
 
 var userFavorite = prompt("What is your favorite band?");
-
 
 
 if (bands.indexOf(userFavorite) === -1) {
@@ -14,20 +15,27 @@ else if (bands.indexOf(userFavorite) > -1) {
 	alert("YEAH I LOVE THEM!");
 }
 
-
-	bandList.innerHTML = '<p>this is stuff</p>';
-
+yourAnswer.innerHTML = userFavorite;
 
 
-	// if (userFavorite == band[]toLowercase()) {
+document.getElementById("show-bands-button").addEventListener("click", function() {
+    
+    for (band in bands) {
+		if (band == bands.length - 1) {
+			bandList.innerHTML += bands[band] + "";
+		}
+		else if (band == bands.length - 2) {
+			bandList.innerHTML += bands[band] + ", and ";
+		}	
+		else {
+			bandList.innerHTML += bands[band] + ", ";
+		}
+	}
+  }, false);
 
-	// 	window.alert("YEAH I LOVE THEM!");
 
-	// }
-	// else {
-	// 	window.alert("Nah. They're pretty lame.");
-	// }
 
-for (var band in bands) {
-	$("dynamic-band-list").append(band);
+var showMyBands = function(){
+
+	
 }
