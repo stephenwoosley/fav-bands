@@ -1,0 +1,29 @@
+.jumbotron {
+	margin-top: 10px;
+}
+
+.jumbo-title h1 {
+	text-align: center;
+}
+
+.content-section {
+	background-color: #eeeeee;
+	color: 
+	border-radius: 3px;
+	padding: 50px 100px 50px 100px;
+
+}
+
+.show-me-button {
+	margin: 50px 0 50px 0;
+	text-align: center;
+}
+
+.content-heading h3 {
+	text-align: center;
+}
+
+.content-body h3 {
+	text-align: center;
+	color: #eb6864;
+}
